@@ -1,0 +1,313 @@
+body{
+    box-sizing: border-box;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-top: 0rem;
+    padding: 0rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+    /* background-color: rgb(194, 74, 74); */
+    background-color: #2e2423;
+}
+/* header{} */
+    /* background: #251614 ; */
+
+header img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+nav ul{
+    flex-wrap: wrap;
+    display: flex;
+    list-style: none;
+    background-color: rgb(194, 74, 74);
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    text-align: center;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    border-radius: 0.7rem;
+    /* outline: rgb(228, 165, 165) solid 0.2rem ;
+    outline-offset: 0.3rem; */
+}
+ul a , footer a  {
+    text-decoration: none;
+    color: rgb(255, 251, 251);
+    font-weight:500; 
+    font-size: 1.5rem;
+    /* padding: 0.5rem 0rem; */
+}
+ul > li {
+    flex:1;
+    padding: 0.5rem 0rem;
+    color: black;
+}
+ ul li:hover{
+    background-color:rgb(224, 209, 209) ;
+    box-shadow: 14px 10px 33px -7px rgba(0,0,0,0.56);
+    -webkit-box-shadow: 14px 10px 33px -7px rgba(0,0,0,0.56);
+    -moz-box-shadow: 14px 10px 33px -7px rgba(0,0,0,0.56);
+    transition: 0.7s;
+    cursor: pointer;
+    /* -webkit-text-shadow:0px 0px 12px 0px rgba(215,224,221,1);
+-moz-text-shadow: 0px 0px 12px 0px rgba(215,224,221,1);
+text-shadow: 0px 0px 12px 0px rgba(215,224,221,1); */
+ }
+ ul li:hover a {
+    color:rgb(194, 74, 74);
+    transition: 0.7s;
+ }
+ 
+ section{
+    display: flex;
+    justify-content: center;
+ }
+ section > article{
+    flex: 1; 
+ }
+ .banner{
+  animation: fadein 1.5s linear;
+    display:flex;
+    background-color: #1a1717d5;
+    margin-top: 2rem;
+    /* background: url(./ASSETS/images/Care-For-Colored-Hair_H-removebg-preview.png) no-repeat; */
+    /* animation: fadein 2s linear; */
+    border-radius: 2rem;
+    /* color: white; */
+    /* opacity: 0.5;
+    transition: 5s; */
+    /* overflow: visible;   */
+   /* border: 2rem solid; */
+   /* background-image: url(./ASSETS//images/side-view-woman-hair-salon.jpg); */
+ }
+ @keyframes fadein {
+    from {
+             /* opacity: 0; */
+            /* margin-left: 80rem; */
+            filter: blur(0.5rem);
+         }
+
+    to   { opacity: 1; }
+ }
+  /* @keyframes fadeout {
+    from { opacity: 1;
+    margin-right: 200rem; }
+    to   { opacity: 0; }
+ }  */
+ .banner img{
+    display: block;
+    margin-left: auto;
+    /* animation: fadein 1.5s linear; */
+    /* flex: 1; */
+ }
+ /* .footer{
+    display: flex;  
+ } */
+ footer>div {
+    flex: 1;
+ }
+ .banner h2{
+   margin: 0rem;
+    /* color: rgb(224, 209, 209);
+    margin: 0rem;
+    align-self: center;
+    display: block;
+    margin-left: 2rem; */
+    /* float: left; */
+    /* animation: fadeout 2s linear; */
+    /* display: inline; */
+ }
+
+ .text{
+   color: rgb(224, 209, 209);
+   text-decoration: underline;
+   text-decoration-color: rgb(194, 74, 74);
+   text-decoration-thickness: 0.3rem;
+   font-style: italic;
+   font-weight: 900;
+   font-size: 1.6rem;
+   display: flex;
+   /* justify-content: center; */
+   align-items: flex-start;
+   flex-direction: column;
+   /* flex: 1; */
+   margin-top: 7rem;
+   line-height: 1.4rem;
+   margin-left: 6rem;
+ }
+ /* .button a{
+   text-decoration: none;
+ } */
+ .content{
+   display: flex;
+   flex-direction: column;
+ }
+ .button a{
+   text-decoration: none;
+   color: rgb(224, 209, 209);
+   border: 0.2rem solid rgb(194, 74, 74);
+   padding: 0.5rem 1rem;
+   border-radius: 0.5rem;
+   font-weight: 700;
+ }
+ .button a:hover{
+   background-color: rgb(194, 74, 74);
+   color: rgb(224, 209, 209);
+   transition: 0.4s;
+ }
+ .button{
+   margin-top: 3rem;
+   margin-left: 6rem;
+ }
+ /* figure img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   border-radius: 0.5rem;
+ } */
+ 
+ .section{
+   background-color: #1a1717d5;
+   margin-top: 1rem;
+   border-radius: 2rem;
+   /* justify-content: center; */
+ }
+
+ .heading h1{
+  color: rgb(224, 209, 209); 
+  font-weight:900;
+  /* display: block;
+  margin-left: auto;
+  margin-right: auto; */
+  font-style: oblique;
+  font-size: 2.5rem;
+  margin: 0rem;
+  text-align: center;
+  padding-top: 1rem; 
+  text-decoration: underline;
+   text-decoration-color: rgb(194, 74, 74);
+   text-decoration-thickness: 0.3rem;
+   text-underline-offset: 0.5rem;
+ }
+ /* .heading{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+ }  */
+ .services{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* margin-left: 1rem; */
+ 
+ }
+
+/* .service-section{
+  justify-content: center ;
+} */
+
+ .services img{
+  width: 90%;
+  /* width: 22rem; */
+  height: 50%;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 0.3rem solid rgb(194, 74, 74);
+  transition:  0.5s ;
+  /* animation: left-postion 1.5s linear; */
+ }
+ .services img:hover{
+  transform: scale(1.2);
+  border: none;
+ }
+ /* @keyframes left-position {
+  from { translate: -80rem;
+  opacity: 0; }
+  to   { translate: 0rem;
+  opacity: 1; } }*/
+  
+ 
+ .services h3{
+  color: rgb(224, 209, 209);
+  font-weight: 900;
+  font-size: 1.5rem;
+  /* margin: 0rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem; */
+ }
+
+.section h3 {
+  margin: 0rem 0rem 1rem 1.1rem;
+/* text-align: center; */
+}
+.services div{
+  margin: 0rem 0rem 0rem 1.1rem;
+}
+/* .services p::before{
+  content: " #";
+} */
+.services p {
+  color: rgb(224, 209, 209);
+  font-weight: 500;
+  font-size: 1.1rem;
+  margin: 0rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  /* text-align: justify; */
+}
+.services a{
+  color: rgb(224, 209, 209);
+  text-decoration: none;
+  animation: fadein-link 1.5s infinite;
+}
+@keyframes fadein-link {
+  from {  
+           opacity: 0.2;
+          /* margin-left: 80rem; */
+          /* filter: blur(0.5rem); */
+       }
+
+  to   { opacity: 1;
+        color: rgb(194, 74, 74);
+      }
+}
+
+                                                                   /* FOOTER */
+  footer{
+    background-color:rgba(194, 74, 74, 0.562) ;
+    display: flex;
+    margin-top: 1rem;
+    border-radius: 2rem;
+    height: 15rem;
+    width: 100%;
+    align-items: center;
+   }
+
+   footer img{
+    height: 10rem;
+    margin-left: 2rem;
+    filter: drop-shadow(11px 10px 10px rgba(0, 0, 0, 0.30));
+  }
+   
+   footer .copy-righs{
+    color: white;
+    /* font-style: italic; */
+    font-weight: 900;
+    /* margin-left: 2rem; */
+   font-size: 1rem;
+   }
+   .footer-links{
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+    align-items: center;
+   }
+   /* .social-media{
+    align-self: center;
+   } */
+   footer .fab:hover{
+      color: rgb(194, 74, 74) !important;
+   }
